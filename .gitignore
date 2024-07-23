@@ -1,71 +1,23 @@
-# Node.js specific files and directories
-
-# Logs
-logs
-*.log
-npm-debug.log*
-
-# Dependency directories
-node_modules/
-
-# Build directories
-dist/
-build/
-
-# dotenv environment variables file
-.env
-
-# Optional npm cache directory
-.npm
-
-# Optional eslint cache
-.eslintcache
-
-# Optional REPL history
-.node_repl_history
-
-# Output of 'npm pack'
-*.tgz
-
-# Yarn Integrity file
-.yarn-integrity
-
-# IDE directories
+### AL ###
+#Template for AL projects for Dynamics 365 Business Central
+#launch.json folder
 .vscode/
-.idea/
-
-# OS-specific files
-.DS_Store
-Thumbs.db
-
-# AL specific files and directories for Dynamics 365 Business Central
-
-# launch.json folder
-.vscode/
-
-# Cache folder
+node
+#Cache folder
 .alcache/
-
-# Symbols folder
+#Symbols folder
 .alpackages/
-
-# Snapshots folder
+#Snapshots folder
 .snapshots/
-
-# Testing Output folder
+#Testing Output folder
 .output/
-
-# Extension App-file
+#Extension App-file
 *.app
-
-# Rapid Application Development File
+#Rapid Application Development File
 rad.json
-
-# Translation Base-file
+#Translation Base-file
 *.g.xlf
-
-# License-file
+#License-file
 *.flf
-
-# Test results file
+#Test results file
 TestResults.xml

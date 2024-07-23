@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>al adan </title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./node_modules/axios/dist/axios.min.js">
+    </script>
+    <style>
+        @keyframes blurFadeIn {
+            0% {
+                opacity: 0;
+                filter: blur(10px);
+            }
+            100% {
+                opacity: 1;
+                filter: blur(0);
+            }
+        }
+        .animate-blur-fade-in {
+            animation: blurFadeIn 1.5s ease-in-out 0.3s forwards;
+          
+        }
+        .bg-mosque {
+            background-image: url('./image/freepik-export-20240722185253bNQt.jpeg'); /* Adjust path if needed */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .icon-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem;
+            gap: 1rem;
+        }
+        .icon-container div {
+            text-align: center;
+        }
+        .icon-container i {
+            font-size: 2rem;
+            color: #333;
+        }
+    </style>
+</head>
+<body  class="animate-blur-fade-in bg-mosque h-screen"> <!-- Use flexbox to layout your divs horizontally -->
+    <!-- A black box with width 52 units -->
+     <div class="flex justify-center"><div class="font-bold text-center text-3xl mt-3 transition delay-300 duration-300 ease-in-out animate-blur-fade-in bg-gray-100 w-96 rounded-2xl h-12 bg-transparent text-white">
+        <i class="fas fa-mosque text-black"></i>  al adan prayer Time
+    </div> </div>
+  
+     <div class="flex flex-col-3">
+    <div class="bg-gray-300 shadow-2xl  w-2/5 h-96 m-12 rounded-3xl flex flex-col space-y-6 items-center bg-transparent">
+        <h1 class="font-bold text-center text-xl mt-3 text">Welcome</h1>
+        <h2 class="font-bold text-sm text-center mt-3 text-white">Please enter your details</h2>
+        <div class="flex flex-row space-x-4"><label for="" class="font-bold text-sm text-center mt-3">Your country:</label>
+            <input type="text" id="country"  placeholder="casablanca"  class="h-6 mt-3 rounded-xl"></div>
+        <div class="flex flex-row space-x-4"><label for="" class="font-bold text-sm text-center mt-3">Your city:</label>
+            <input type="text"   id="city"   placeholder="morocco" class=" h-6 mt-3 rounded-xl"></div>
+        
+      
+        <button type="submit"   id="button" class="rounded-2xl text-white bg-black w-40 hover:shadow-black">submit</button>
+    </div>
+    <!-- A vertical bar with width 2 units and full height -->
+    <div class="bg-blue-400 w-1/5 h-full"></div>
+    <!-- An empty box with width 72 units -->
+    <div class="bg-gray-200 w-2/5 h-full m-10">
+        
+        <div class="icon-container">
+            <div>
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Location</p>
+            </div>
+    
+            <div>
+                
+        
+                <i class="fas fa-sun"></i>
+                <p>Fajr</p>
+            </div>
+            <div>
+                <i class="fas fa-cloud-sun"></i>
+                <p>Dhuhr</p>
+            </div>
+            <div>
+                <i class="fas fa-cloud-moon"></i>
+                <p>Asr</p>
+            </div>
+            <div>
+                <i class="fas fa-moon"></i>
+                <p>Maghrib</p>
+            </div>
+            <div>
+                <i class="fas fa-star"></i>
+                <p>Isha</p>
+            </div>
+    </div>
+</div>
+    <script src="master.js"></script>
+</body>
+</html>

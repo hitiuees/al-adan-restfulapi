@@ -1,4 +1,3 @@
-import axios from "axios";
 //declare variable needed in the whole code
 let button = document.getElementById("button");
 let containerprayer = document.getElementById("divtime");
